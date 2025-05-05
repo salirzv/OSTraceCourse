@@ -88,4 +88,4 @@ In This report we are going to have a look at user space function tracing and pe
     lttng destroy
     ```
     *Note that you need to adjust your subbuf size according to your memory size, also adjust the output folder based on your needs.
-    
+    1
