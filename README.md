@@ -88,4 +88,13 @@ In This report we are going to have a look at user space function tracing and pe
     lttng destroy
     ```
     *Note that you need to adjust your subbuf size according to your memory size, also adjust the output folder based on your needs.
-    1
+
+    ### Break down your trace contexts into sub traces
+    Incase you have negative counter values in your trace file, you should split your contexts into smaller chunks. For example trace the cache load misses alone in their own trace file and compare the results of other chunks traces with each other. For example if you find out that in the tx_burst a lot of cache miss happens, you can go to the other trace files and check if other context behave the same?
+
+    ### Import your trace files to TraceCompass
+    Download and run the TraceCompass from this link:
+    https://eclipse.dev/tracecompass/
+    From the `file -> import` select your root directory.
+    If you did not pass the output option to the LTTng script, the output defaults to the root directory.
+    
