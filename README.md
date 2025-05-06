@@ -97,4 +97,10 @@ In This report we are going to have a look at user space function tracing and pe
     https://eclipse.dev/tracecompass/
     From the `file -> import` select your root directory.
     If you did not pass the output option to the LTTng script, the output defaults to the root directory.
+    Open the trace from the left menu: 
+
+    ![open trace](select_trace.png)
+
+    In the statistics tab you should not see any misses, if you see misses, you should alter your subbuf size:
     
+    ![statistics](statistics.png)
